@@ -5,12 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 public class PlayActivity extends AppCompatActivity {
 
 
     ImageView addition,sub,multi,divie,square;
+    Button btnHomePage;
 
 
 
@@ -19,6 +21,7 @@ public class PlayActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
 
+        btnHomePage= this.<Button>findViewById(R.id.btnHomePage);
 
         addition = (ImageView) findViewById(R.id.addition);
         sub = (ImageView) findViewById(R.id.sub);
@@ -28,11 +31,13 @@ public class PlayActivity extends AppCompatActivity {
 
 
 
+
+
         addition.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent calInt= new Intent(PlayActivity.this, MainActivity.class);
-                calInt.putExtra("cals","+");
+
                 startActivity(calInt);
 
             }
@@ -42,7 +47,7 @@ public class PlayActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent calInt=new Intent(PlayActivity.this,SubtractionActivity.class);
-                calInt.putExtra("cals","-");
+
                 startActivity(calInt);
 
             }
@@ -52,7 +57,7 @@ public class PlayActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent calInt= new Intent(PlayActivity.this, MultipActivity.class);
-                calInt.putExtra("cals","*");
+
                 startActivity(calInt);            }
         });
 
@@ -61,7 +66,7 @@ public class PlayActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent calInt= new Intent(PlayActivity.this, DivideActivity.class);
-                calInt.putExtra("cals","÷");
+
                 startActivity(calInt);
 
             }
@@ -73,9 +78,17 @@ public class PlayActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent calInt= new Intent(PlayActivity.this, SquareActivity.class);
-                calInt.putExtra("cals","÷");
+
                 startActivity(calInt);
 
+            }
+        });
+
+        btnHomePage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(PlayActivity.this,OpenActivity2.class);
+                startActivity(intent);
             }
         });
 

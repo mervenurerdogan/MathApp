@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:layout_gravity="center"
-    android:background="@drawable/pngtreemath_blackboard_cyan_fresh_background_1473189"
+    android:background="@color/mainbtncolor5"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".PlayActivity">
 
     <LinearLayout
@@ -59,17 +59,16 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_gravity="center"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal">
+
         <ImageView
             android:id="@+id/multi"
-            android:src="@drawable/icons8_multiply_67"
-            android:layout_margin="15dp"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            >
-        </ImageView>
+            android:layout_margin="15dp"
+            android:src="@drawable/icons8_multiply_67"></ImageView>
 
         <ImageView
             android:id="@+id/divie"
@@ -79,24 +78,32 @@
             android:src="@drawable/icons8_divide_67"></ImageView>
 
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_gravity="center"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="horizontal">
+
         <ImageView
             android:id="@+id/square"
-            android:src="@drawable/icons8_square_root_67"
-            android:layout_margin="15dp"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            >
-        </ImageView>
-
+            android:layout_margin="15dp"
+            android:src="@drawable/icons8_square_root_67"></ImageView>
 
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnHomePage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/mainbtncolor4"
+        android:text="Anasayfaya Dön"
+        android:textColor="@color/mainbtncolor3"
+        android:textStyle="bold" />
 
 
 </LinearLayout>

@@ -135,11 +135,8 @@ public class SquareActivity extends AppCompatActivity {
 
         tv_bottomMesagge.setText(g.getNumberCorrect()+"/" + (g.getTotalQuestions()-1));
 
-
-
-
-
     }
 
 
 }
+

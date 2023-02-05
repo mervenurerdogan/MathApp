@@ -14,4 +14,17 @@
     <color name="background">#FFF6BF</color>
 
 
+    <color name="appbackground">#F5F5F5</color>
+    <color name="apptext">#FC5185</color>
+    <color name="mainbtncolor1">#3FC1C9</color>
+    <color name="mainbtncolor2">#364F6B</color>
+
+
+    <color name="mainbtncolor3">#2B3467</color>
+    <color name="mainbtncolor4">#BAD7E9</color>
+    <color name="mainbtncolor5">#FCFFE7</color>
+    <color name="mainbtncolor6">#EB455F</color>
+
+
+
 </resources>
