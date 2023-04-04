@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:backgroundTint="@color/mainbtncolor5"
+    android:background="@color/mainbtncolor5"
     tools:context=".OpenActivity2">
 
     <Button
@@ -32,7 +32,7 @@
         android:backgroundTint="@color/mainbtncolor3"
         android:foregroundGravity="center"
         android:gravity="center"
-        android:text="Geometri Alıştırmalar"
+        android:text="Geometrik Alıştırmalar"
         android:textColor="@color/mainbtncolor6"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -65,7 +65,7 @@
         android:layout_width="153dp"
         android:layout_height="160dp"
 
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="72dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -73,22 +73,22 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="350dp"
         android:background="@color/mainbtncolor4"
         android:elegantTextHeight="false"
         android:foregroundGravity="center"
         android:gravity="center"
-        android:text="Matematik Öğrenme ve Alıştırma Uygulaması"
+        android:text="Matematik Alıştırma Uygulaması"
         android:textAlignment="gravity"
         android:textColor="#D81B60"
-        android:textSize="24sp"
+        android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
